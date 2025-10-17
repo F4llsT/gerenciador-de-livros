@@ -6,6 +6,7 @@ import HomePage from '@/pages/HomePage'
 import LivrosPage from '@/pages/livros/LivrosPage'
 import NotFound from '@/pages/NotFound'
 import NovoLivro from '@/pages/livros/NovoLivro'
+import EditarLivro from '@/pages/livros/EditarLivro'
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/livros" element={<LivrosPage />} />
           <Route path="/livros/novo" element={<NovoLivro />} />
+          <Route path="/livros/editar/:id" element={<EditarLivro />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Container>
